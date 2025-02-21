@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill Radio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asset&family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My vibe</h1>
+    </header>
+    <div class="container">
+
+        <p class="intro-text">Je suis contente de vous partager 5 musiques qui me représentent, et j'ai hâte de découvrir les vôtres. Alors c'est parti !</p>
+        
+        <div  class="lecteur-description">
+
+    <div class="music-player">
+        <div class="details">
+            <h2 id="song-title">California Love</h2>
+            <p id="artist-name">Tupac Shakur (feat. Dr. Dre)</p>
+
+            <div class="photo-album">
+                <img id="photo" src="img/tupac-disk.jpg" alt="Album cover">
+            </div>
+        </div>
+
+
+
+        <audio id="audio-player"></audio>
+
+        <div class="controls">
+            <button id="prev" class="control-btn">⏮</button>
+            <button id="play" class="control-btn">⏵</button>
+            <button id="next" class="control-btn">⏭</button>
+        </div>
+
+        <div class="slider">
+            <input type="range" id="seek-bar" value="0" min="0" max="100">
+            
+
+        
+        </div>
+    </div>
+      <!-- Bloc de description séparé sous le lecteur -->
+      <div class="description-card">
+        <h3 class="pourquoi"> Pourquoi ?</h3>   
+        <p id="description">Description de la chanson actuelle...</p>
+    </div>
+
+</div>
+
+
+  </div>
+
+    <div class="logo-container">
+        <a id="spotify-logo" href="https://open.spotify.com/" target="_blank" title="Écouter sur Spotify">
+            <img src="logo/spotify.png" alt="Logo Spotify" style="width: 50px;">
+        </a>
+    </div>
+
+    <div class="click-formulaire">
+        <a href="#ancre-formulaire" title="Aller au formulaire">
+            <img src="logo/click_Formulaire.png" alt="Logo Formulaire" style="width: 80px;">
+        </a>
+    </div>
+
+    <div  class="lecteur+description">
+
+<div class="formulaire" id="ancre-formulaire"> 
+
+<p>
+    <form id="champs-formulaire">
+        <h2 class="titleform"> Et toi ? Quels sont tes coups de cœur !</h2>
+        <fieldset>
+          <p class="txt-required">*Les champs marqués sont obligatoires.</p>
+      
+          <label for="artiste">Nom de l'artiste : <span class="star-required">*</span></label><br>
+          <input type="text" name="artiste" id="artiste" required><br><br>
+      
+          <label for="titre-musique">Nom de la musique : <span class="star-required">*</span></label><br>
+          <input type="text" name="titre-musique" id="titre-musique" required><br><br>
+      
+          <label for="description-musique">Description de la musique : <span class="star-required">*</span></label><br>
+          <textarea name="description-musique" id="description-musique" required></textarea><br><br>
+      
+          <label for="audio-url">URL de la musique : <span class="star-required">*</span></label><br>
+          <input type="url" id="audio-url" name="audio-url" required><br><br>
+      
+          <button type="submit" id="button">Envoyer</button>
+        </fieldset>
+      </form>
+    </form>
+  </p>
+
+
+
+
+
+
+<footer>
+    <!--<p class="boutonCredits">Crédits</p>-->
+    <!--<div class="clickcredits" hidden> -->
+    <div class="footer-contener">
+        
+       <p> Crédits</p> 
+      <p>© 2025 SARR Nene-Mariam. Tous droits réservés.</p>
+       <p>Site réalisé par SARR Nene-Mariam.</p>
+       <p>Les musiques présentées sont libres de droits.</li>
+       <p>Les images visibles sur ce site proviennent de Pinterest et de WallpaperAccess.</p>
+       <p>Les fichiers audio utilisés ont été obtenus via YouTube.</p>
+      
+    </div>
+       <div class="apparition">
+    <div class="credits"> <p class="title-song">California love</p><div class="desc">© California Love (Original Version) · 2Pac · Roger Troutman · Dr. Dre
+    </div></div>
+    <div class="credits"> <p class="title-song"> Save your tears</p> <div class="desc">© Save Your Tears · The Weeknd · Max Martin· Oscar Holter
+    </div></div>
+    <div class="credits"> <p class="title-song"> See you again</p> <div class="desc">© See You Again · Tyler, The Creator · Kali Uchis</div></div>
+    <div class="credits"> <p class="title-song"> charm</p> <div class="desc">© Charm · Rema</div></div>
+    <div class="credits"> <p class="title-song"> Chicago </p> <div class="desc">© Chicago · Michael Jackson · Cory Rooney
+    </div></div>
+</div>
+
+    </footer>
+    <script src="data.js"></script>
+    <script src="scrip.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oi&display=swap');
+
+
+/* Application de la police au texte */
+.intro-text {
+    text-align: center;
+    font-size: 2rem;  /* Texte beaucoup plus gros */
+    color: rgb(72, 36, 7);
+    margin: 40px 0; /* Un peu d'espace avant et après */
+    font-family: 'Oi', sans-serif; /* Utilisation de la police Oi Static */
+}
+
+
+/* Défilement automatique */
+html, body {
+    height: 100%; /* Permet à la page de s'ajuster selon le contenu */
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Défilement fluide */
+    overflow-y: auto; /* Permet le défilement vertical */
+
+}
+.container { 
+    max-width: 1024px;
+    margin: 0 auto;
+
+}
+
+/* Style général du body avec fond d'écran */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Minimum hauteur de l'écran */
+    margin: 0;
+    background-color: #222;
+    background-image: url('img/fond.jpg'); /* Image de fond */
+    background-size: cover; /* L'image couvre toute la fenêtre */
+    background-attachment: fixed;
+    background-position:  center; /* Centrer l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+header{
+    background-color: #532c09;
+}
+
+
+/* Titre principal */
+header h1 {
+    font-family: "Barriecito", serif;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+
+
+.lecteur-description {
+display: flex;
+gap: 30px;
+}
+/* Player de musique */
+.music-player {
+    text-align: center;
+    background-color: rgba(240, 240, 240, 0.3); /* Gris très clair transparent */
+    padding: 50px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px; /* Espace pour séparer du bloc de description */
+    backdrop-filter: blur(10px);
+    max-height: 300px; /* Ajuste selon la hauteur souhaitée */
+
+}
+
+#photo {
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+    float: left;
+    border-radius: 10px;
+    position: relative; /* Permet d'ajuster la position sans impacter le flux des autres éléments */
+    top: -100px; /* Monte la photo de 10px (ajuste la valeur selon le besoin) */
+}
+
+.details h2 {
+    margin: 10;
+    margin-left: 250px;
+
+}
+
+.details p {
+    margin: 5px 0;
+    margin-left: 250px;
+    font-size: 14px;
+    color: #ccc;
+    top: 100px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.control-btn {
+    background-color: #444;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    background-color: #555;
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+#seek-bar {
+    width: 100%;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.2); /* Transparente et claire */
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    position: relative; /* Permet d'ajuster la position sans impacter le flux des autres éléments */
+    top: -100px; /* Monte la photo de 10px (ajuste la valeur selon le besoin) */
+
+}
+
+#seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+#seek-bar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
+
+input[type="range"] {
+    background-color: red !important;
+}
+
+/* Nouvelle section pour la description sous le lecteur de musique */
+.description-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+   text-align: justify;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.pourquoi {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555; /* Change la couleur selon ton design */
+    margin-bottom: 10px; /* Ajoute un peu d’espace en dessous */
+    text-align: center; /* Centrer le texte */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Rubik+Vinyl&display=swap');
+
+.pourquoi {
+    font-family: 'Rubik Vinyl', sans-serif; /* Change pour 'Rubik Vinyl' si tu préfères cette police */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #555; /* Couleur du texte */
+    margin-bottom: 10px; /* Espace en bas */
+    text-align: center; /* Centrer le texte */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    text-transform: uppercase; /* Met tout en majuscules si nécessaire */
+}
+
+/* Logo Spotify */
+.logo-container {
+    position: fixed;
+    right: 20px; /* Distance du bord droit */
+    top: 50%; /* Centre verticalement */
+    transform: translateY(-50%); /* Ajuste pour un centrage parfait */
+}
+
+#spotify-logo img {
+    width: 50px;
+    height: auto;
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+#spotify-logo img:hover {
+    transform: scale(1.1); /* Zoom au survol */
+    cursor: pointer;
+}
+
+/* Logo pour le formulaire - Bas à gauche */
+.click-formulaire {
+    position: fixed; /* Toujours visible sur l'écran */
+    bottom: 20px; /* Distance du bas */
+    left: 20px; /* Distance du bord gauche */
+    z-index: 10; /* Au-dessus des autres éléments */
+}
+
+.click-formulaire img {
+    width: 150px; /* Augmente la taille du logo */
+    max-width: none; /* Ignore les limites imposées par défaut */
+    max-height: none; /* Ignore les limites verticales */
+    height: auto;
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.formulaire .click-formulaire img:hover {
+    transform: scale(1.2); /* Zoom au survol */
+    cursor: pointer; /* Change le curseur en main */
+}
+
+.formulaire legend {
+
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+
+}
+
+
+#champs-formulaire {
+    background-color: rgb(255, 238, 207);
+    width: 500px;
+    border-radius: 15px;
+    margin-left: 500px
+  
+   }
+  
+   #champs-formulaire fieldset {
+    border: none; 
+    padding: 0;  
+    display: flex;
+    flex-direction: column; /* Aligne les champs verticalement */
+    align-items: center;    /* Centre horizontalement */
+    border-radius: 10px
+}
+  
+  
+
+  #champs-formulaire  input:last-of-type {
+    top: -10px;
+    right: -10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    background: #ffffff;;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  #champs-formulaire input:last-of-type:hover {
+    background-color: rgb(252, 221, 181)
+  }
+  
+  #champs-formulaire  input:nth-of-type(-n+3) {
+    height: 20px;
+    width: 90%;
+  }
+
+  #audio-url {
+    width: 90%;
+  }
+  
+#champs-formulaire input[type="text"],
+#champs-formulaire input[type="url"],
+#champs-formulaire input[type="button"] {
+  border-radius: 10px; /* Ajout des coins arrondis */
+  padding: 5px; /* Ajoute un peu d'espace interne pour une meilleure apparence */
+  border: 1px solid #ccc; /* Ajoute une bordure discrète */
+}
+  .titleform {
+    font-family: "Poppins", serif; 
+    color: #09042f;
+    text-align: center;
+  }
+  
+  .txt-required{
+    margin-top: auto;
+    font-size: 10px;
+  }
+
+
+
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .lecteur-description {
+        flex-direction: column;
+    }
+    .container {
+       max-width: 70%;
+    }
+    .description-card, .music-player{
+        width: unset;
+    }
+}
+
+.lecteur-description{
+    margin-bottom: 70px;
+}
+
+/*.boutonCredits {
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 15px;
+    color: aliceblue;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Styles pour le footer (masqué par défaut) 
+.clickcredits {
+    display: none;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+} */
+
+footer {
+    background-color: rgb(72, 36, 7);
+    color: #fff;
+}
+
+.apparition {
+    display: flex;
+    gap: 250px;
+}
+
+footer .credits .desc {
+    display: none;
+}
+
+footer .credits:hover .desc {
+    display: block;
+}
+
+.footer-contener {
+    text-align: center;
+}
